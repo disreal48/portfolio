@@ -6,6 +6,10 @@ Primary Color (Purple): #357b70;
 Secondary Color (Orange): #e0b354;
  */
 
+ * {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
@@ -84,4 +88,19 @@ button:hover, button:focus {
 
 .navigation-list__item--active {
     text-decoration: none;
+}
+
+.profile__portrait {
+    float: left;
+    width: 250px;
+    margin-right: 40px;
+}
+
+.page-footer {
+    clear: both;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
 }
