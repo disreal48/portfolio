@@ -19,37 +19,54 @@
     <title>Svens Portfolio Site</title>
   </head>
   <body>
-    <header>
-      <img src="./img/laptop_logo.svg" alt="Papernotebook with Code in it" />
-      <nav>
+    <header class="page-header">
+      <img
+        src="./img/laptop_logo.svg"
+        alt="Papernotebook with Code in it"
+        class="page-header__item page-header__logo"
+      />
+      <nav main-navigation class="page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              ><h1>Home</h1></a
+            >
           </li>
           <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              ><h1>About Me</h1></a
+            >
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              ><h1>Contact</h1></a
+            >
           </li>
         </ul>
       </nav>
     </header>
     <main class="profile">
-      <img src="./img/me.svg" alt="A photograph of me" class="profile__portrait" />
+      <img
+        src="./img/me.svg"
+        alt="A photograph of me"
+        class="profile__portrait"
+      />
       <h1>Hello World!</h1>
-      <p>
-        <h2>My name is Sven.</h2> 
-        <br> 
-        I am a <span>web</span> developer from Berlin.
-    </p>      
+      <h2>My name is Sven.</h2>
+      <br />
+      I am a <span>web</span> developer from Berlin.
       <a href="#">See some of my work</a>
     </main>
     <footer class="page-footer">
       <p>Find me on</p>
-      <img src="./img/github_icon.svg" alt="Github" />
-      <img src="./img/x_icon.svg" alt="X" />
-      <img src="./img/linkedin_icon.svg" alt="LinkedIn" />
+      <div class="social-media">
+        <img src="./img/github_icon.svg" alt="Github" />
+        <img src="./img/x_icon.svg" alt="X" />
+        <img src="./img/linkedin_icon.svg" alt="LinkedIn" />
+      </div>
     </footer>
     <script src="js/tota11y.min.js"></script>
   </body>
