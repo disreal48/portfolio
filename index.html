@@ -15,7 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.production.css" />
     <title>Svens Portfolio Site</title>
   </head>
   <body>
@@ -57,18 +57,16 @@
         </ul>
       </nav>
     </header>
-    <main class="profile">
-      <img
-        src="./img/me.svg"
-        alt="A photograph of me"
-        class="profile__portrait"
-      />
-      <section class="profile__text">
-        <h1>Hello World!</h1>
-        <h2>My name is Sven.</h2>
-        <br />
-        I am a <span>web</span> developer from Berlin.
-        <a href="work.html" class="profile__link">See some of my work</a>
+    <main>
+      <section class="main_container">
+        <img src="./img/me.svg" alt="A photograph of me" class="main_section" />
+        <section class="main_section" id="intro_text">
+          <h1>My name is Sven.</h1>
+          <br />
+          I am a <span>web</span> developer from Berlin.
+          <br />
+          <a href="work.html">See some of my work</a>
+        </section>
       </section>
     </main>
     <footer class="page-footer">
