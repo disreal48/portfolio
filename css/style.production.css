@@ -321,6 +321,14 @@ button:focus,
     flex-direction: column;
     margin-left: 15px;
   }
+
+  .main_container {
+    flex-direction: column;
+  }
+
+  .main_section {
+    width: 100%;
+  }
 }
 
 #intro_text {
