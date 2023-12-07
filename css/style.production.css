@@ -214,6 +214,7 @@ button:focus,
   -ms-flex-direction: row;
   flex-direction: row;
   width: 100%;
+  padding: 30px;
 }
 
 .main_section {
