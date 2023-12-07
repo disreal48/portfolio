@@ -134,6 +134,7 @@ button:focus,
   background-color: rgb(141, 168, 156);
   position: sticky;
   top: 0;
+  font-size: 25px;
 }
 
 .page-header__intro {
