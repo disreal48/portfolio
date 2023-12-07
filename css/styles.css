@@ -1,7 +1,7 @@
 :root {
-  --header-color: rgb(225, 245, 235);
+  --header-color: rgb(141, 168, 156);
   --main-color: lightgray;
-  --footer-color: rgb(184, 168, 168);
+  --footer-color: #897171;
   --font-weight: 700;
 }
 
@@ -86,7 +86,7 @@ button {
   font-family: inherit;
 
   /* style button */
-  background-color: #357b70;
+  background-color: #6e6ef7;
   color: white;
   text-decoration: none;
   padding: 10px;
@@ -120,20 +120,14 @@ button:focus,
   display: flex;
   flex-direction: row;
   text-align: center;
-  margin-left: 15px;
+  margin-left: 30px;
   margin-top: 10px;
-}
-
-.page-header__item {
-  flex: 0 1 200px;
 }
 
 .page-header__logo {
   flex-grow: 1;
-  text-align: left;
   max-width: 50px;
   max-height: 50px;
-  margin-top: 30px;
 }
 
 .page-header__item:last-child {
@@ -169,13 +163,6 @@ button:focus,
   background-color: lightgray;
   align-items: center;
   text-align: left;
-}
-
-.contact_section {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 100%;
 }
 
 .main_container {
@@ -216,7 +203,6 @@ button:focus,
 
 .page-footer {
   clear: both;
-  margin-top: 20px;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -225,10 +211,9 @@ button:focus,
   flex-direction: column;
   display: flex;
   text-align: center;
-  position: fixed;
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 600px) {
   .grid {
     grid-template-columns: 1fr;
   }
@@ -245,26 +230,21 @@ button:focus,
     align-items: center;
     min-height: 50vh;
   }
-}
 
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
+  .navigation-list {
+    display: flex;
+    flex-direction: column;
   }
 
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
+  .page-header__logo {
+    max-width: 100px;
+    max-height: 100px;
   }
 
-  h1 {
-    font-size: 22px;
+  .page-header__intro {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
   }
 }
 
