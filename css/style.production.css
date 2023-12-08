@@ -279,7 +279,7 @@ nav ul li a:hover {
   text-align: center;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 620px) {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
