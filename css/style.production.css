@@ -46,7 +46,6 @@ main {
   width: 100%;
   min-height: 80vh;
   background-color: lightgray;
-  padding: 20px;
 }
 
 h1 {
@@ -207,9 +206,9 @@ nav ul li a:hover {
   flex-direction: column;
   width: 50%;
   background-color: lightgray;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: left;
+  -webkit-box-align: left;
+  -ms-flex-align: left;
+  align-items: center;
   text-align: left;
 }
 
@@ -293,19 +292,8 @@ nav ul li a:hover {
   }
 
   .about_section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 100%;
-    background-color: lightgray;
-    -webkit-box-align: left;
-    -ms-flex-align: left;
-    align-items: left;
     min-height: 50vh;
+    align-items: flex-start;
   }
 
   .navigation-list {
@@ -342,8 +330,4 @@ nav ul li a:hover {
   .main_section {
     width: 100%;
   }
-}
-
-#intro_text {
-  margin-top: 15%;
 }
