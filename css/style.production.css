@@ -46,7 +46,7 @@ main {
   width: 100%;
   min-height: 80vh;
   background-color: lightgray;
-  pad: 30px;
+  padding: 20px;
 }
 
 h1 {
@@ -135,6 +135,7 @@ button:focus,
   position: sticky;
   top: 0;
   font-size: 25px;
+  color: #fff;
 }
 
 .page-header__intro {
@@ -163,6 +164,7 @@ button:focus,
   -ms-flex-positive: 1;
   flex-grow: 1;
   text-align: right;
+  margin-right: 20px;
 }
 
 .navigation-list {
@@ -177,6 +179,10 @@ button:focus,
 
 .navigation-list__item--active {
   text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #ddd;
 }
 
 .about {
