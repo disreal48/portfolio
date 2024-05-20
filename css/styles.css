@@ -199,6 +199,11 @@ button:focus,
     margin: 20px;
     border: 2px solid black;
   }
+
+  .grid__item--image {
+    width: 90%;
+    height: 90%;
+  }
 }
 
 .page-footer {
