@@ -44,8 +44,8 @@ main {
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  min-height: 80vh;
-  background-color: lightgray;
+  min-height: 100vh;
+  background-color: rgba(211, 211, 211, 0);
 }
 
 h1 {
@@ -126,15 +126,13 @@ button:focus,
 }
 
 .page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+  align-items: center; /* This ensures vertical alignment is centered */
+  justify-content: space-between; /* This spreads the items to occupy the available space */
   width: 100%;
-  background-color: rgb(141, 168, 156);
+  background-color: white;
   position: sticky;
   top: 0;
-  font-size: 25px;
-  color: #fff;
 }
 
 .page-header__intro {
@@ -150,12 +148,19 @@ button:focus,
   margin-top: 25px;
 }
 
+.page-header__intro,
+.navigation-list {
+  display: flex;
+  align-items: center; /* Align items vertically in the center */
+}
+
 .page-header__logo {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  max-width: 50px;
-  max-height: 50px;
+  max-width: 80px;
+  max-height: 80px;
+  margin-bottom: 30px;
 }
 
 .page-header__item:last-child {
@@ -168,6 +173,11 @@ button:focus,
 
 .navigation-list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 
 .navigation-list li {
@@ -176,8 +186,24 @@ button:focus,
   margin-right: 15px;
 }
 
-.navigation-list__item--active {
+.navigation-list__item:hover,
+.navigation-list__item:focus {
+  background-color: #4a4ae6; /* Change background color on hover/focus */
+  color: #fff; /* Ensure text color remains readable */
+}
+
+.navigation-list__item {
   text-decoration: none;
+  color: #fff; /* Change the text color */
+  font-weight: bold;
+  padding: 15px; /* Add some padding for better touch targets */
+  border-radius: 5px; /* Optional: Add rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.navigation-list__item--active {
+  background-color: #b6b6b8; /* Different background color for active item */
+  color: #fff;
 }
 
 nav ul li a:hover {
@@ -227,16 +253,11 @@ nav ul li a:hover {
   flex-direction: row;
   width: 100%;
   padding: 30px;
+  justify-content: center;
 }
 
 .main_section {
-  width: 50%;
-}
-
-/* start grid fallback */
-.grid__item {
-  display: inline-block;
-  width: 33%;
+  width: 100%;
 }
 
 /* end grid fallback */
@@ -261,8 +282,22 @@ nav ul li a:hover {
   }
 
   .grid__item--image {
-    width: 90%;
-    height: 90%;
+    max-width: 350px;
+    width: auto;
+    height: auto;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Ensures content is centered horizontally in the card */
+    align-items: center; /* Ensures content is centered vertically in the card */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    text-align: center;
+    font-family: arial;
+    padding: 10px;
+    margin: 10px;
   }
 }
 
@@ -271,7 +306,7 @@ nav ul li a:hover {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #897171;
+  background-color: white;
   color: white;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -281,6 +316,78 @@ nav ul li a:hover {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
+}
+
+.skill-container {
+  background-color: rgb(192, 192, 192);
+  width: 80%;
+  border-radius: 15px;
+}
+
+.skill {
+  color: white;
+  padding: 1%;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px;
+}
+
+.html {
+  width: 80%;
+  background-color: green;
+}
+
+.css {
+  width: 60%;
+  background-color: lightgreen;
+}
+
+.js {
+  width: 80%;
+  background-color: green;
+}
+
+.jquery {
+  width: 80%;
+  background-color: green;
+}
+
+.react {
+  width: 70%;
+  background-color: green;
+}
+
+.angular {
+  width: 50%;
+  background-color: yellowgreen;
+}
+
+.node {
+  width: 60%;
+  background-color: lightgreen;
+}
+
+.python {
+  width: 60%;
+  background-color: lightgreen;
+}
+
+.sql {
+  width: 70%;
+  background-color: green;
+}
+
+.mongo {
+  width: 70%;
+  background-color: green;
+}
+
+.main_section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Ensures content is centered horizontally in the card */
+  align-items: center; /* Ensures content is centered vertically in the card */
 }
 
 @media all and (max-width: 620px) {
@@ -299,40 +406,5 @@ nav ul li a:hover {
   .about_section {
     min-height: 50vh;
     align-items: flex-start;
-  }
-
-  .navigation-list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .page-header__logo {
-    max-width: 100px;
-    max-height: 100px;
-  }
-
-  .page-header__intro {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    margin-left: 25px;
-    margin-top: 2px;
-  }
-
-  .main_container {
-    flex-direction: column;
-  }
-
-  .main_section {
-    width: 100%;
   }
 }

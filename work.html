@@ -21,13 +21,13 @@
   <body>
     <header class="page-header">
       <section class="page-header__intro">
-        <b>Sven</b>
+
         <img
           src="./img/laptop_logo.svg"
           alt="Papernotebook with Code in it"
           class="page-header__item page-header__logo"
         />
-        <b>Dev</b>
+
       </section>
       <nav main-navigation class="page-header__item">
         <ul role="menubar" class="navigation-list">
@@ -41,12 +41,12 @@
           </li>
           <li role="presentation">
             <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active"
-              ><b>My work</b></a
+              ><b>Projects</b></a
             >
           </li>
           <li role="presentation">
             <a href="about.html" role="menuitem" class="navigation-list__item"
-              ><b>About Me</b></a
+              ><b>About</b></a
             >
           </li>
         </ul>
@@ -55,69 +55,141 @@
     <main>
       <h1>See some of my work</h1>
       <div class="grid">
-        <div class="grid__item">
-          <h2>Meet App</h2>
+
+        <div class="grid__item card">
+          <h2>Movie React APP</h2>
+          <img src="./img/movie_react.png" alt="ReactMovieApp" class="grid__item--image" />
+       
           <p>
-            This React App lets you find Events in specific locations.
-            <br />
-            You also get visualized data about those events.
-            <br>
-            The technologies used for this App are: React, Rechart, Node.JS, Serverless Framework, AWS Lamda, Atatus, Jest, Jest-Cucumber and Puppeteer.
-            <img src="./img/meet.png" alt="Meet App" class="grid__item grid__item--image" />
+            This is a Movie-Database written in React.
           </p>
-          <a href="https://disreal48.github.io/meet/" target="_blank"
+          <p> 
+            It uses the MovieDB API to get the data.
+          </p>
+          <p>
+            The technologies used for this App are: <b>React</b>, <b>Bootstrap</b> and <b>Parcel</b>.
+    </p>
+
+          <a href="https://github.com/disreal48/myFlix-client" target="_blank"
+            >See project on GitHub</a
+          >
+          <br>
+          <a href="https://disdb.netlify.app/" target="_blank"
           >Visit App</a
         >
-        <br>
+        </div>
+
+        <div class="grid__item card">
+          <h2>Movie Angular APP</h2>
+          <img src="./img/movie_angular.png" alt="AngularMovieApp" class="grid__item--image" />
+       
+          <p>
+            This is a Movie-Database written in Angular.
+          </p>
+          <p> 
+            It uses the MovieDB API to get the data.
+          </p>
+          <p>
+            The technologies used for this App are: <b>Angular</b>, <b>MaterialUI</b> and <b>Typscript</b>.
+    </p>
+
+          <a href="https://github.com/disreal48/myFlix-Angular-client" target="_blank"
+            >See project on GitHub</a
+          >
+          <br>
+          <a href="https://disreal48.github.io/myFlix-Angular-client/" target="_blank"
+          >Visit App</a
+        >
+        </div>
+
+        <div class="grid__item card">
+          <h2>Movie API</h2>
+          <img src="./img/movie_api.png" alt="ReactMovieApp" class="grid__item--image" />
+       
+          <p>
+            This is the Mongo-DB based Backend for a Movie API.
+          </p>
+          <p> 
+            It delivers data about movies and users.
+          </p>
+          <p>
+            The technologies used for this App are: <b>NODE</b>, <b>Express</b> and <b>Mongo-DB</b>.
+    </p>
+
+          <a href="https://github.com/disreal48/movie_api" target="_blank"
+            >See project on GitHub</a
+          >
+          <br>
+          <a href="https://github.com/disreal48/movie_api/tree/main/public" target="_blank"
+          >See Documentation of the Endpoints</a
+        >
+        </div>
+        <div class="grid__item card">
+          <h2>Meet App</h2>
+          <img src="./img/meet.png" alt="ReactMovieApp" class="grid__item--image" />
+       
+          <p>
+            This React App lets you find Events in specific locations.
+          </p>
+          <p> 
+            You also get visualized data about those events.
+          </p>
+          <p>
+            The technologies used for this App are: <b>React</b>, <b>AWS Lamda</b> and <b>Jest</b>.
+    </p>
+
           <a href="https://github.com/disreal48/meet" target="_blank"
             >See project on GitHub</a
           >
+          <br>
+          <a href="https://disreal48.github.io/meet/" target="_blank"
+          >Visit App</a
+        >
         </div>
-        <div class="grid__item">
-          <h2>Sunhunt</h2>
+        <div class="grid__item card">
+          <h2>Chat APP</h2>
+          <img src="./img/chat.png" alt="ReactMovieApp" class="grid__item--image" />
+       
           <p>
-            This React App tells you where to travel.
-            <br />
-            The App is in the making.
+            This is a mobile Chat-APP for IOS and Android written in REACT-Native.
           </p>
-          <a href="https://github.com/disreal48/sunhunt" target="_blank"
+          <p> 
+            It let's you chat, take and post pictures and share your location.
+          </p>
+          <p>
+            The technologies used for this App are: <b>React-Native</b>, <b>Expo</b> and <b>Firebase</b>.
+    </p>
+
+          <a href="https://github.com/disreal48/chat-app" target="_blank"
             >See project on GitHub</a
           >
+
+
         </div>
-        <div class="grid__item">
-          <h2>Task App</h2>
+        <div class="grid__item card">
+          <h2>Pokey Dokey</h2>
+          <img src="./img/pokey.png" alt="ReactMovieApp" class="grid__item--image" />
+       
           <p>
-            This React App lets you plan your tasks.
-            <br />
-            The App is in the making.
+            It's a Pokedex-App giving you information on Pokemon.
           </p>
-          <a href="https://github.com/disreal48/TasksApp" target="_blank"
+          <p> 
+            The App calls the PokeApi to get the data.
+          </p>
+          <p>
+            The technologies used for this App are: <b>JQuery</b>, <b>Bootstrap</b> and <b>PokeAPI</b>.
+    </p>
+<br>
+          <a href="https://github.com/disreal48/PokeyDokey" target="_blank"
             >See project on GitHub</a
           >
+
         </div>
-        <div class="grid__item">
-          <h2>Exocortex</h2>
-          <p>
-            This React App lets you organize Text Snippets.
-            <br />
-            The App is in the making and is a colaboration with a friend.
-          </p>
-          <a href="https://github.com/goriya/exocortex" target="_blank"
-            >See project on GitHub</a
-          >
-        </div>
-        <div class="grid__item">
-          <h2>Pokédex</h2>
-          <p>
-            This App lets you seach for Pokémon.
-            <br />
-            The App is in the making.
-          </p>
-          <a href="https://github.com/goriya/pokedex" target="_blank"
-            >See project on GitHub</a
-          >
-        </div>
+     
+    
+
       </div>
+
     </main>
     <div class="push"></div>
     <footer class="page-footer">
@@ -129,6 +201,12 @@
         <a href="https://www.linkedin.com/in/sven-p-b49704217/" target="_blank"
           ><img src="./img/linkedin_icon.svg" alt="Link to LinkedIn"
         /></a>
+        <a href="https://x.com/incivility48" target="_blank"
+        ><img src="./img/x_icon.svg" alt="Link to LinkedIn"
+      /></a>
+      <a href="https://medium.com/@disreal48" target="_blank"
+      ><img src="./img/medium.svg" alt="Link to LinkedIn"
+    /></a>
       </div>
     </footer>
   </body>
