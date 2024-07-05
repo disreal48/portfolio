@@ -194,7 +194,7 @@ button:focus,
 
 .navigation-list__item {
   text-decoration: none;
-  color: #fff; /* Change the text color */
+  color:black /* Change the text color */
   font-weight: bold;
   padding: 15px; /* Add some padding for better touch targets */
   border-radius: 5px; /* Optional: Add rounded corners */
