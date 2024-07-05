@@ -135,9 +135,6 @@ button:focus,
 }
 
 .page-header__intro {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
@@ -194,7 +191,7 @@ button:focus,
 
 .navigation-list__item {
   text-decoration: none;
-  color:black /* Change the text color */
+  color: black; /* Change the text color */
   font-weight: bold;
   padding: 15px; /* Add some padding for better touch targets */
   border-radius: 5px; /* Optional: Add rounded corners */
@@ -390,7 +387,7 @@ nav ul li a:hover {
   align-items: center; /* Ensures content is centered vertically in the card */
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 1200px) {
   .grid {
     -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -398,13 +395,13 @@ nav ul li a:hover {
 
   .card {
     max-width: 300px;
-}
+  }
 
-.grid__item--image {
-  max-width: 250px;
-  width: auto;
-  height: auto;
-}
+  .grid__item--image {
+    max-width: 250px;
+    width: auto;
+    height: auto;
+  }
 
   .about {
     -webkit-box-orient: vertical;
@@ -419,7 +416,7 @@ nav ul li a:hover {
   }
 
   .navigation-list {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .navigation-list__item {
@@ -430,14 +427,9 @@ nav ul li a:hover {
     flex-direction: column;
     padding: 5px;
   }
-
-  .page-header__logo {
-    margin-left: 40vh;
-
-  }
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 550px) {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -469,7 +461,6 @@ nav ul li a:hover {
   }
 
   .page-header__logo {
-    margin-left: 10vh;
-
+    margin-left: 100%;
   }
 }
