@@ -407,4 +407,25 @@ nav ul li a:hover {
     min-height: 50vh;
     align-items: flex-start;
   }
+
+  .navigation-list {
+    flex-direction: column;
+  }
+
+  .navigation-list__item {
+    padding: 5px; /* Add some padding for better touch targets */
+  }
+
+  .main_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+  }
 }
